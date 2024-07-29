@@ -1,0 +1,35 @@
+	scipy เป็นส่วนขยายของ numpy มีฟังก์ชันสำหรับการทำงานระดับสูงทางคณิตศาสตร์ วิทยาศาสตร์ วิศวกรรม และการคำนวนทางเทคนิค
+มีแพคเกจย่อยดังนี้
+cluster 	(algor จัดกลุ่ม)  (K-means, vector quantization, Hierarchical clustering)
+constants 	(ค่าคงที่)
+	Mathematical, Physical, Units
+fftpack 	(การแปลงฟูริเยร์แบบไม่ต่อเนื่อง)
+	FFTs, Differential and pseudo-differential operators, Helper functions, Convolutions
+integrate	(อนุ,ปริพันธ์)
+	Integrating functions, Solving ODE systems problems
+interpolate (การแก้ไข)
+	Univariate interpolation, Multivariate interpolation, 1-D and 2-D Splines ,Additional tools
+io	(input/output)
+	MATLAB, IDL, Matrix Market, Unformatted Fortran, Netcdf, Harwell-Boeing, Wav sound, Arff 
+linalg 	(พีชคณิตเชิงเส้น)
+	Basics (ex. invert), Eigenvalue Problems, Decompositions, Matrix Functions, Matrix Equation Solvers, Sketches and Random Projections, 
+	Special Matrices, Low-level routines
+ndimage 	(ประมวลผลภาพ n มิติ)
+	Filters, Fourier filters, Interpolation, Measurements, Morphology
+odr	(orthogonal distance regression <หาชื่อไทยไม่เจอ>)
+optimize 	(ประสิทธิภาพการทำงาน (ลดขนาดส่วนโค้ง,ฯลฯ) )
+	Least-squares and curve fitting, Root finding, MILP, Assignment problems, Utilities, Legacy functions 
+signal 	(สัญญาณ)
+	Convolution, B-splines, Filtering, Filter design, Matlab-style IIR filter design, Continuous-time linear systems, 
+	LTI representations, Waveforms, Window functions, Wavelets, Peak finding, Spectral analysis, Chirp Z-transform and Zoom FFT
+sparse 	(เมทริก 2 มิติ)
+	array classes, matrix classes, Functions, Submodules, Exceptions
+spatial 	(ข้อมูลเชิงพื้นที่)
+	Nearest-neighbor queries, Distance metrics, Delaunay triangulation, convex hulls and Voronoi diagram, Plotting helpers
+special 	(ฟังก์ชันเสริม(ฟิสิกส์,คณิต))
+	Error handling, Available functions
+stats	(สถิติ)		
+	Probability distributions, Summary statistics, Frequency statistics, Correlation functions, Statistical tests, Quasi-Monte Carlo, 
+	Resampling Methods, Masked statistics functions, Other statistical functionality
+
+ที่มา https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide

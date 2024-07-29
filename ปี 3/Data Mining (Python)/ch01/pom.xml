@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<modelVersion>4.0.0</modelVersion>
+<groupId>cpe.datamining65</groupId>
+<artifactId>ch01.ingesting-csv</artifactId>
+<name>Ingesting CSV Project</name>
+<packaging>jar</packaging>
+<version>1.0</version>
+
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <scala.version>2.12</scala.version>
+    <spark.version>3.1.2</spark.version>
+    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+</properties>
+
+
+<dependencies>
+    <dependency> 
+       <!-- Spark dependency -->
+       <groupId>org.apache.spark</groupId>
+       <artifactId>spark-core_${scala.version}</artifactId>
+       <version>${spark.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-sql_${scala.version}</artifactId>
+      <version>${spark.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+</dependencies>
+
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin.version}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <configuration>
+          <executable>java</executable>
+          <arguments>
+            <argument>-classpath</argument>
+            <classpath />
+            <argument>cpe.datamining65.CsvToDataframeApp</argument>
+          </arguments>
+        </configuration>
+      </plugin>
+    </plugins>
+</build>
+</project>

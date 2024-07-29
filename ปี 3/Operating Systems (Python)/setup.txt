@@ -1,0 +1,4 @@
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+sudo apt-get update
+sudo apt-get install git
+git clone https://github.com/remzi-arpacidusseau/ostep-homework/

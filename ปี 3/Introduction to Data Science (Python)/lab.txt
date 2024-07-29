@@ -1,0 +1,2 @@
+conda activate intro2ds
+jupyter lab
